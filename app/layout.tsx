@@ -1,22 +1,23 @@
-import type { Metadata } from 'next';
-import { Toaster } from 'sonner';
+import type { Metadata } from "next";
+import { Toaster } from "sonner";
 
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from "@/components/theme-provider";
 
-import './globals.css';
+import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://chat.vercel.ai'),
-  title: 'Next.js Chatbot Template',
-  description: 'Next.js chatbot template using the AI SDK.',
+  metadataBase: new URL("https://chat.xngen.ai"),
+  title: "XnGen AI - Chatbot",
+  description:
+    "At XnGen AI, we help businesses simplify and streamline their operations by integrating intelligent systems that handle up to 90% of customer inquiries. Our proprietary system, Support-nGen™, is built to improve your customer service by efficiently managing tasks like FAQs, support tickets, and more complex queries. Think of it as having a reliable, 24/7 team member that gets smarter over time.",
 };
 
 export const viewport = {
   maximumScale: 1, // Disable auto-zoom on mobile Safari
 };
 
-const LIGHT_THEME_COLOR = 'hsl(0 0% 100%)';
-const DARK_THEME_COLOR = 'hsl(240deg 10% 3.92%)';
+const LIGHT_THEME_COLOR = "hsl(0 0% 100%)";
+const DARK_THEME_COLOR = "hsl(240deg 10% 3.92%)";
 const THEME_COLOR_SCRIPT = `\
 (function() {
   var html = document.documentElement;
