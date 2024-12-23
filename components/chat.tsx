@@ -47,7 +47,7 @@ export function Chat({
     experimental_throttle: 100,
     onFinish: () => {
       mutate('/api/history');
-    },
+    },    
   });
 
   const { data: votes } = useSWR<Array<Vote>>(
